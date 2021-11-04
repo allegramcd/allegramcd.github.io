@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>About Page</title>
+  </head>
+  <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" />
+  <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png" />
+  <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png" />
+  <link rel="manifest" href="/site.webmanifest" />
+  <style>
+    /* Title style */
+    h1 {
+      text-align: center;
+      font-family: Arial, Helvetica, sans-serif;
+    }
+
+    body {
+      font-family: Arial, Helvetica, sans-serif;
+    }
+
+    /* Add a black background color to the top navigation */
+    .topnav {
+      background-color: black;
+      overflow: hidden;
+      display: block;
+      width: 100%;
+      margin-left: auto;
+      margin-right: auto;
+      font-family: Arial, Helvetica, sans-serif;
+    }
+
+    /* Style the links inside the navigation bar */
+    .topnav a {
+      float: left;
+      color: #f2f2f2;
+      text-align: center;
+      padding: 14px 70px;
+      text-decoration: none;
+      font-size: 17px;
+    }
+
+    /* Change the color of links on hover */
+    .topnav a:hover {
+      background-color: hotpink;
+      color: black;
+    }
+
+    /* Style the search box inside the navigation bar */
+    .topnav input[type="text"] {
+      float: right;
+      padding: 6px;
+      border: none;
+      margin-top: 8px;
+      margin-right: 16px;
+      font-size: 17px;
+    }
+
+    /* When the screen is less than 600px wide, stack the links and the search field vertically instead of horizontally */
+    @media screen and (max-width: 600px) {
+      .topnav a,
+      .topnav input[type="text"] {
+        float: none;
+        display: block;
+        text-align: left;
+        width: 100%;
+        margin: 0;
+        padding: 14px;
+      }
+      .topnav input[type="text"] {
+        border: 1px solid #ccc;
+      }
+    }
+
+    #description {
+        text-align: center;
+        font-style: italic;
+    }
+
+    #silkworms {
+      width: 25%;
+      float: left;
+    }
+
+    #silkwomen {
+      width: 25%;
+      float: right;
+    
+    }
+  </style>
+  <body>
+    <h1>About Us! <img src="favicon.ico" alt="logo" title="logo" /></h1>
+    <div class="topnav">
+      <a class="active" href="index.html">Home</a>
+      <a href="#dresses">Dresses</a>
+      <a href="#pants">Pants</a>
+      <a href="#tops">Tops</a>
+      <a href="about.html">About</a>
+      <a href="contact.html">Contact</a>
+      <input type="text" placeholder="Search.." />
+    </div>
+    <br>
+    <br>
+    <p id="description">
+      This is the layout to <span style="color:hotpink">Allegra’s Silks</span> online boutique we sell limited
+      amounts of top-quality silk dresses, silk tops and silk pants. We were
+      founded in 2021 in NYC, as a solution to all your cute silk wardrobe
+      needs.
+    </p>
+    <br clear="left" />
+    <br>
+    <br>
+    <br>
+    <p>
+      <img
+        id="silkworms"
+        src="images/silkworms.jpg"
+        alt="Silkworms"
+        title="silkworms"
+      />
+      Learn about silk! “Silk, animal fibre produced by certain insects and
+      arachnids as building material for cocoons and webs, some of which can be
+      used to make fine fabrics. In commercial use, silk is almost entirely
+      limited to filaments from the cocoons of domesticated silkworms
+      (caterpillars of several moth species belonging to the genus Bombyx).” –
+      Britannica
+    </p>
+    <br clear="left" />
+    <p>
+      <img
+        id="silkwomen"
+        src="images/silkladies.jpg"
+        alt="Silk Women"
+        title="Women making silk"
+      />
+      Silk origins! “The origin of silk production and weaving is ancient and
+      clouded in legend. The industry undoubtedly began in China, where,
+      according to native record, it existed from sometime before the middle of
+      the 3rd millennium BCE. At that time it was discovered that the roughly 1
+      km (1,000 yards) of thread that constitutes the cocoon of the silkworm
+      could be reeled off, spun, and woven, and sericulture early became an
+      important feature of the Chinese rural economy. A Chinese legend says that
+      it was the wife of the mythological Yellow Emperor, Huangdi, who taught
+      the Chinese people the art; throughout history the empress was
+      ceremonially associated with sericulture. The weaving of damask probably
+      existed in the Shang dynasty, and the tombs of the 4th–3rd centuries BCE
+      at Mashan near Jiangling (Hubei province), excavated in 1982, have
+      provided outstanding examples of brocade, gauze, and embroidery with
+      pictorial designs as well as the first complete garments.” – Britannica
+    </p>
+    <br clear="left" />
+    <a href="https://www.britannica.com/topic/silk">Click here to learn more</a>
+  </body>
+</html>
