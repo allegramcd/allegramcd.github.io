@@ -51,7 +51,7 @@
       }
 
       /* When the screen is less than 600px wide, stack the links and the search field vertically instead of horizontally */
-      @media screen and (max-width: 600px) {
+      @media screen and (max-width: 700px) {
         .topnav a,
         .topnav input[type="text"] {
           float: none;
@@ -72,6 +72,7 @@
         width: 50%;
         padding: 5px;
         height: 600px;
+        font-size: 15pt;
       }
 
       /* Clear floats after image containers */
@@ -81,11 +82,62 @@
         align-items: center;
         justify-content: center;
         margin: 0;
+        font-size: 15pt;
       }
 
       .column img {
         height: 100%;
       }
+
+      * {
+        box-sizing: border-box;
+      }
+
+    /* Three image containers (use 25% for four, and 50% for two, etc) */
+    .column {
+      float: left;
+      width: 50%;
+      padding: 5px;
+      height: 800px;
+    }
+
+    /* Clear floats after image containers */
+    .row {
+      clear: both;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      margin: 0;
+    }
+
+    .column img {
+      height: 100%;
+    }
+
+      div.column:hover {
+        border: 1px solid #777;
+      }
+
+      div.column img {
+        width: 100%;
+        height: auto;
+      }
+
+
+    @media only screen and (max-width: 700px) {
+        .row {
+          width: 49.99999%;
+          margin: 6px 0;
+        }
+      }
+
+      @media only screen and (max-width: 500px) {
+        .row {
+          width: 100%;
+        }
+      }
+
+
     </style>
   </head>
   <body>
@@ -108,6 +160,7 @@
           alt="front pants"
           title="front pants"
         />
+        Dark Green Sweatpants $145
       </div>
       <div class="column">
         <img
@@ -116,6 +169,7 @@
           alt="front sweats"
           title="front sweats"
         />
+        Beige Sweatpants $145
       </div>
     </div>
 
