@@ -94,15 +94,22 @@
     /* Three image containers (use 25% for four, and 50% for two, etc) */
     .column {
       float: left;
-      width: 49%;
+      width: 50%;
       padding: 5px;
+      height: 800px;
     }
 
     /* Clear floats after image containers */
-    .row::after {
-      content: "";
+    .row {
       clear: both;
-      display: table;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      margin: 0;
+    }
+
+    .column img{
+      height: 100%;
     }
   </style>
   <body>
@@ -124,18 +131,19 @@
           id="morestock"
           src="images/morestock.jpeg"
           alt="back in stock"
-          style="width: 100%"
           title="items back in stock"
         />
       </div>
       <div class="column">
-        <img
+        <a href="dresses.html">
+          <img
           id="dresses"
           src="images/dresses.jpeg"
           alt="Shop dresses"
-          style="width: 100%"
           title="more dresses"
         />
+        </a>
+
       </div>
     </div>
 
